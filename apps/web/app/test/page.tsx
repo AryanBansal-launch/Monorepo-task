@@ -1,11 +1,11 @@
 import React from "react";
-// import { getMiddlewareMessage } from "../../../middleware";
+import { getMiddlewareMessage } from "../../../middleware";
 
 const Page = () => {
   return (
     <div>
       <h1>This is a test page</h1>
-      {/* <p>Middleware says: {getMiddlewareMessage()}</p> */}
+      <p>Middleware says: {getMiddlewareMessage()}</p>
     </div>
   );
 };
