@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+// import { getMiddlewareMessage } from "../../../middleware";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
-      This is a test page
+      <h1>This is a test page</h1>
+      {/* <p>Middleware says: {getMiddlewareMessage()}</p> */}
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
