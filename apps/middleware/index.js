@@ -1,4 +1,4 @@
-const { greet } = require("@repo/testpack/index");
+const { greet } = require("@repo/testpack");
 
 function getMiddlewareMessage() {
   return greet("Middleware Service");
