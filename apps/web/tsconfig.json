@@ -17,5 +17,9 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "paths": {
+      "@repo/db": ["packages/db"],
+      "@repo/utils": ["packages/utils"]
+    }
 }
