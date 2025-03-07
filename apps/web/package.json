@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@repo/testpack": "*",
-    "@repo/fakestore-api": "*",
     "@repo/ui": "*",
     "next": "^15.1.6",
     "react": "^19.0.0",
