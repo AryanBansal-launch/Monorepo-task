@@ -1,5 +1,5 @@
 import React from "react";
-import { getMiddlewareMessage } from "../../../middleware";
+import { getMiddlewareMessage } from "../../../middleware/api";
 
 const Page = () => {
   return (

@@ -19,8 +19,7 @@
     "node_modules"
   ],
   "paths": {
-      "@repo/db": ["packages/db"],
-      "@repo/utils": ["packages/utils"],
-      "@repo/testpack": ["packages/testpack"],
+      "@repo/ui": ["packages/ui"],
+      "@repo/testpack": ["packages/testpack"]
     }
 }

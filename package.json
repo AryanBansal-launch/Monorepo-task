@@ -21,5 +21,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@repo/testpack": "*",
+    "@repo/fakestore-api": "*"
+  }
 }
