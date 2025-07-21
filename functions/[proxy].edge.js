@@ -30,6 +30,11 @@ export default function handler(request,context) {
       }
       return new Response(JSON.stringify(response))
     }
-    console.log('Docs domain - no matching route');
+    console.log('Docs domain - fetching request');
+    return fetch(request);
+  }
+  else{
+    console.log('Unknown domain detected:', domain);
+    return fetch(request);
   }
    }
