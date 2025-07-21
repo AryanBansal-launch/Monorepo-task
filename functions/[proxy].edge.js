@@ -1,5 +1,5 @@
-export default function handler(request) {
-  let domain = process.env.NEXT_PUBLIC_DOMAIN || request.headers.host;
+export default function handler(request,context) {
+  let domain = context.env.NEXT_PUBLIC_DOMAIN;
   console.log('Domain detected:', domain);
   if(domain == 'monorepo-task-web.devcontentstackapps.com'){
     console.log('Web domain detected:', domain);
