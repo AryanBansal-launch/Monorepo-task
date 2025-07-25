@@ -41,15 +41,20 @@
 
 export default async function handler(request) {
   const redirectHosts = [
-    'https://monorepo-task-web.devcontentstackapps.com'
+    'monorepo-task-web.devcontentstackapps.com'
   ];
 
   const url = new URL(request.url);
+  const hostname = url.hostname;
 
-  if (redirectHosts.includes(url.hostname)) {
+  console.log('Request hostname:', hostname);
+
+  if (redirectHosts.includes(hostname)) {
+    console.log('Redirecting from:', hostname, 'to cradlepoint.com');
     url.hostname = 'cradlepoint.com';
     return Response.redirect(url.toString(), 308);
   }
 
+  console.log('No redirect needed, fetching original request');
   return fetch(request);
 }
