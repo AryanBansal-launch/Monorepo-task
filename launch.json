@@ -1,8 +1,8 @@
 {
     "redirects": [
         {
-            "source": "https://monorepo-task-web.devcontentstackapps.com/:slug",
-            "destination": "https://cradlepoint.com/:slug",
+            "source": "https://monorepo-task-web.devcontentstackapps.com/:slug(.*)",
+            "destination": "https://cradlepoint.com/:slug(.*)",
             "statusCode": 308
         }
     ]
