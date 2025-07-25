@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "https://monorepo-task-web.devcontentstackapps.com/test",
+            "destination": "/test2",
+            "status": 307
+        }
+    ]
+}
